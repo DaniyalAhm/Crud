@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+# CRUD Application
+
+This repository contains a CRUD (Create, Read, Update, Delete) application developed using a variety of technologies to ensure isolation, security, and efficiency.
+
+## Overview
+
+This project was instrumental in introducing me to TensorFlow. However, for this particular application, I opted to use Amazon Rekognition due to its advanced features and ease of integration.
+
+## Features
+
+- **Dockerized Environment**: The project is structured to run the backend and frontend in separate Docker containers. This approach ensures isolation between services, enhancing security and maintainability.
+- **Backend**: Developed using Node.js and Flask, providing a robust and scalable server-side solution.
+- **Frontend**: Built with React, offering a dynamic and responsive user interface.
+- **Amazon Rekognition Integration**: Utilized for image analysis and recognition, providing powerful and accurate insights.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Docker
+- Docker Compose
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/DaniyalAhm/Crud.git
+   cd Crud
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Build and run the containers**:
+   ```bash
+   docker-compose up --build
+   ```
 
-## Learn More
+### Usage
 
-To learn more about Next.js, take a look at the following resources:
+The application can be accessed via `http://localhost:3000` for the frontend and `http://localhost:5000` for the backend.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Frontend**: React
+- **Backend**: Node.js, Flask
+- **Image Analysis**: Amazon Rekognition
+- **Containerization**: Docker
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [TensorFlow](https://www.tensorflow.org/)
+- [Amazon Rekognition](https://aws.amazon.com/rekognition/)
+- [Docker](https://www.docker.com/)
+- [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [Flask](https://flask.palletsprojects.com/)
+
