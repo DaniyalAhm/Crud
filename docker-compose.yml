@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - /root/.ssh:/root/.ssh
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+        - /home/daniyal/Pantry-Tracker/pantry-tracker/backend:/app
+    command: tail -f /dev/null  # Keep the container running

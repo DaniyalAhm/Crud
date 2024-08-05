@@ -8,14 +8,16 @@
 
 # testing
 /coverage
-
+/backend/credientials
 # next.js
 /.next/
 /out/
 
 # production
 /build
-
+/backend/aws
+/backend/credientials
+/backend/GroceryStoreDataset
 # misc
 .DS_Store
 *.pem

@@ -1,0 +1,10 @@
+Flask
+requests
+Flask-Cors
+firebase-admin
+Werkzeug==2.0.2
+jupyter
+tensorflow
+pillow
+scipy
+scikit-learn
